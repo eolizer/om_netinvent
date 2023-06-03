@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Device Interfaces -->
+        <record id="view_ni_dev_interfaces_tree" model="ir.ui.view">
+            <field name="name">view_ni_dev_interfaces_tree</field>
+            <field name="model">ni.interfaces</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="intf_name"/>
+                    <field name="intf_ip"/>
+                    <field name="intf_mac"/>
+                    <field name="link_type_id"/>
+                    <field name="intf_peer"/>
+                    <field name="intf_description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_ni_dev_interfaces_action" model="ir.actions.act_window">
+            <field name="name">Device Interfaces</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ni.interfaces</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">
+                {'tree_view_ref': 'om_netinvent.view_ni_dev_interfaces_tree'}
+            </field>
+        </record>
+
+        <record id="view_ni_dev_interfaces_form" model="ir.ui.view">
+            <field name="name">ni.dev_interfaces.form</field>
+            <field name="model">ni.interfaces</field>
+            <field name="arch" type="xml">
+                <form string="Maintenance">
+                    <group>
+                        <field name="intf_name"/>
+                    </group>
+                    <group>
+                        <field name="intf_ip"/>
+                        <field name="intf_mac"/>
+                        <field name="link_type_id"/>
+                        <field name="intf_peer"/>
+                    </group>
+                    <group>
+                        <field name="intf_description"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+om_netinvent.access_ni_networks,access_ni_networks,om_netinvent.model_ni_networks,base.group_user,1,1,1,1
+om_netinvent.access_ni_network_range,access_ni_network_range,om_netinvent.model_ni_network_range,base.group_user,1,1,1,1
+om_netinvent.access_ni_device_register,access_ni_device_register,om_netinvent.model_ni_device_register,base.group_user,1,1,1,1
+om_netinvent.access_ni_device_categories,access_ni_device_categories,om_netinvent.model_ni_device_categories,base.group_user,1,1,1,1
+om_netinvent.access_ni_devices,access_ni_devices,om_netinvent.model_ni_devices,base.group_user,1,1,1,1
+om_netinvent.access_ni_settings_tags,access_ni_settings_tags,om_netinvent.model_ni_settings_tags,base.group_user,1,1,1,1
+om_netinvent.access_ni_maintenance,access_ni_maintenance,om_netinvent.model_ni_maintenance,base.group_user,1,1,1,1
+om_netinvent.access_ni_interfaces,access_ni_interfaces,om_netinvent.model_ni_interfaces,base.group_user,1,1,1,1
+om_netinvent.access_ni_interfaces_link_type,access_ni_interfaces_link_type,om_netinvent.model_ni_interfaces_link_type,base.group_user,1,1,1,1

@@ -1,0 +1,427 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* om_netinvent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 13:58+0000\n"
+"PO-Revision-Date: 2023-06-03 13:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__add_info
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+msgid "Additional Info"
+msgstr ""
+
+#. module: om_netinvent
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+msgid "Basic Info"
+msgstr "Загальна інформація"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__color
+msgid "Color"
+msgstr "Колір"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__create_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__create_uid
+msgid "Created by"
+msgstr "Створено"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__create_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__description
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__description
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__description
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__intf_description
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_maintenance_form
+msgid "Description"
+msgstr "Опис"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__device_id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__device_id
+msgid "Device"
+msgstr "Пристрій"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__category
+msgid "Device Category"
+msgstr "Категорія обладнання"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_dev_interfaces_action
+#: model:ir.model,name:om_netinvent.model_ni_interfaces
+msgid "Device Interfaces"
+msgstr "Інтерфейси"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__devitem_id
+msgid "Device Item"
+msgstr "Номенклатура пристрою"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_maintenance_action
+msgid "Device Maintenance"
+msgstr "Обслуговування"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_device_register_action
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_device_register
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_device_register_form
+msgid "Device Register"
+msgstr "Номенклатура пристроїв"
+
+#. module: om_netinvent
+#: model:ir.model,name:om_netinvent.model_ni_device_register
+msgid "Device register"
+msgstr "Номенклатура пристроїв"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_devices_action
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_devices
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+msgid "Devices"
+msgstr "Пристрої"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__display_name
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__display_name
+msgid "Display Name"
+msgstr "Ім'я"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__hostname
+msgid "Hostname"
+msgstr "Ім`я хоста"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__id
+msgid "ID"
+msgstr "ID"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__intf_ip
+msgid "IP Address"
+msgstr "IP адреса"
+
+#. module: om_netinvent
+#: model:ir.model.constraint,message:om_netinvent.constraint_ni_network_range_ip_range_uniq
+msgid "IP range already exists"
+msgstr "Підмережа вже існує"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__intf_mac
+msgid "Interface MAC Address"
+msgstr "MAC адреса інтерфейса"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__intf_name
+msgid "Interface Name"
+msgstr "Ім'я інтерфейса"
+
+#. module: om_netinvent
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+msgid "Interfaces"
+msgstr "Інтерфейси"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__intf_ids
+msgid "Intf"
+msgstr "Інтерфейс"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__intf_peer
+msgid "Intf Peer"
+msgstr "Підключений пристрій"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks____last_update
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags____last_update
+msgid "Last Modified on"
+msgstr "Востаннє змінено"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__write_uid
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє змінено"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__write_date
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__write_date
+msgid "Last Updated on"
+msgstr "Востаннє змінено"
+
+#. module: om_netinvent
+#: model:ir.model,name:om_netinvent.model_ni_interfaces_link_type
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces__link_type_id
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_interfaces_link_type__name
+msgid "Link Type"
+msgstr "Тип з'єднання"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__location
+msgid "Location"
+msgstr "Розташування"
+
+#. module: om_netinvent
+#: model:ir.model,name:om_netinvent.model_ni_maintenance
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_dev_interfaces_form
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_maintenance_form
+msgid "Maintenance"
+msgstr "Обслуговування"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__mnt_date
+msgid "Maintenance Date"
+msgstr "Дата"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__mnt_description
+msgid "Maintenance Description"
+msgstr "Опис робіт"
+
+#. module: om_netinvent
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+msgid "Management"
+msgstr "Управління"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mgmt_ip
+msgid "Management IP Address"
+msgstr "IP адреса інтерфейса управління"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mgmt_mac
+msgid "Management Interface MAC"
+msgstr "МАС адреса інтерфеса управління"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mgmt_ssh
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mgmt_telnet
+msgid "Management SSH Interface"
+msgstr "SSH доступ"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mgmt_vlan
+msgid "Management VLAN"
+msgstr "VLAN управління"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mgmt_web
+msgid "Management Web Interface"
+msgstr "WEB доступ"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__mnt_ids
+msgid "Mnt"
+msgstr "Обслуговування"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__model
+msgid "Model"
+msgstr "Модель"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_categories__name
+msgid "Name"
+msgstr "Ім'я"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__net_id
+msgid "Net"
+msgstr "Мережа"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__network_id
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
+msgid "Network"
+msgstr "Мережа"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__description
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_networks_form
+msgid "Network Description"
+msgstr "Опис мережі"
+
+#. module: om_netinvent
+#: model:ir.model,name:om_netinvent.model_ni_devices
+msgid "Network Devices"
+msgstr "Мережеві пристрої"
+
+#. module: om_netinvent
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_networks_form
+msgid "Network IP Address"
+msgstr "IP адреса мережі"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__ip_range
+msgid "Network IP Range"
+msgstr "Підмережа"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_network_range__notes
+msgid "Network IP Range Notes"
+msgstr "Коментарі"
+
+#. module: om_netinvent
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_main
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_main_root
+msgid "Network Inventory"
+msgstr "Управління мережею"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__name
+msgid "Network Name"
+msgstr "Ім'я мережі"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_network_range_action
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_network_range_form
+msgid "Network Range"
+msgstr "Підмережі"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__range_ids_str
+msgid "Network Ranges"
+msgstr "Підмережі"
+
+#. module: om_netinvent
+#: model:ir.model,name:om_netinvent.model_ni_device_categories
+msgid "Network device categories"
+msgstr "Категорії мережевих пристроїв"
+
+#. module: om_netinvent
+#: model:ir.model.constraint,message:om_netinvent.constraint_ni_networks_name_uniq
+msgid "Network with the same name already exists"
+msgstr "Мережа з таким ім'ям вже існує"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_networks_action
+#: model:ir.model,name:om_netinvent.model_ni_networks
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_networks_item
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_networks_form
+msgid "Networks"
+msgstr "Мережі"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__range_ids
+msgid "Range"
+msgstr "Підмережа"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_maintenance__mnt_responsible
+msgid "Responsible Person"
+msgstr "Відповідальна особа"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__resp_user
+msgid "Responsible User"
+msgstr "Відповідальний користувач"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__serial_number
+msgid "Serial Number"
+msgstr "Серійний номер"
+
+#. module: om_netinvent
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_settings_root
+msgid "Settings"
+msgstr "Налаштування"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_settings_tags__name
+msgid "Tag Name"
+msgstr "Ім'я тега"
+
+#. module: om_netinvent
+#: model:ir.model.constraint,message:om_netinvent.constraint_ni_settings_tags_name_uniq
+msgid "Tag name already exists"
+msgstr "Тег з таким ім'ям вже існує"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_tags_action
+#: model:ir.model,name:om_netinvent.model_ni_settings_tags
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__tag_ids
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_networks__tag_ids
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_tags_item
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_tags_form
+msgid "Tags"
+msgstr "Теги"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_device_register__vendor
+msgid "Vendor"
+msgstr "Виробник"
+
+#. module: om_netinvent
+#: model:ir.model,name:om_netinvent.model_ni_network_range
+msgid "ni.network.range"
+msgstr ""

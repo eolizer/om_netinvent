@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_ni_devices_tree" model="ir.ui.view">
+            <field name="name">view_ni_devices_tree</field>
+            <field name="model">ni.devices</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="hostname"/>
+                    <field name="mgmt_ip"/>
+                    <field name="serial_number"/>
+                    <field name="devitem_id"/>
+                    <field name="description"/>
+                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_ni_devices_action" model="ir.actions.act_window">
+            <field name="name">Devices</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ni.devices</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="context">
+                {'tree_view_ref': 'om_netinvent.view_ni_devices_tree'}
+            </field>
+        </record>
+
+        <record id="view_ni_devices_form" model="ir.ui.view">
+            <field name="name">ni.devices.form</field>
+            <field name="model">ni.devices</field>
+            <field name="arch" type="xml">
+                <form string="Devices">
+                    <sheet>
+                        <group string="Basic Info">
+                            <field name="hostname"/>
+                            <field name="mgmt_ip"/>
+                            <field name="serial_number"/>
+                            <field name="devitem_id"/>
+                        </group>
+                        <group>
+                            <field name="resp_user"/>
+                            <field name="location"/>
+                        </group>
+                        <group string="Description">
+                            <field name="description"/>
+                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                        </group>
+                        <group string="Network">
+                            <field name="network_id"/>
+                        </group>
+                        <notebook>
+                            <page string="Management">
+                                <group>
+                                    <field name="mgmt_ip"/>
+                                    <field name="mgmt_mac"/>
+                                    <field name="mgmt_vlan"/>
+                                </group>
+                                <group col="6" colspan="2">
+                                    <field name="mgmt_web"/>
+                                    <field name="mgmt_ssh"/>
+                                    <field name="mgmt_telnet"/>
+                                </group>
+                            </page>
+                            <page string="Interfaces">
+                                <field name="intf_ids"/>
+                            </page>
+                            <page string="Maintenance">
+                                <field name="mnt_ids"/>
+                            </page>
+                            <page string="Additional Info">
+                                <field name="add_info"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
