@@ -21,7 +21,7 @@ class NIDevices(models.Model):
     mgmt_mac = fields.Char(string="Management Interface MAC")
     mgmt_web = fields.Boolean(string="Management Web Interface")
     mgmt_ssh = fields.Boolean(string="Management SSH Interface")
-    mgmt_telnet = fields.Boolean(string="Management SSH Interface")
+    mgmt_telnet = fields.Boolean(string="Management Telnet Interface")
 
     add_info = fields.Text(string="Additional Info")
 
