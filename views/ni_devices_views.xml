@@ -9,8 +9,11 @@
                 <tree>
                     <field name="hostname"/>
                     <field name="mgmt_ip"/>
+                    <field name="network_id"/>
+                    <field name="dev_category"/>
                     <field name="serial_number"/>
                     <field name="devitem_id"/>
+                    <field name="device_os"/>
                     <field name="description"/>
                     <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                 </tree>
@@ -38,6 +41,7 @@
                             <field name="mgmt_ip"/>
                             <field name="serial_number"/>
                             <field name="devitem_id"/>
+                            <field name="device_os"/>
                         </group>
                         <group>
                             <field name="resp_user"/>
@@ -53,7 +57,8 @@
                         <notebook>
                             <page string="Management">
                                 <group>
-                                    <field name="mgmt_ip"/>
+                                    <field name="mgmt_dhcp"/>
+                                    <field name="mgmt_ip" attrs="{'invisible': [('mgmt_dhcp', '=', True)]}"/>
                                     <field name="mgmt_mac"/>
                                     <field name="mgmt_vlan"/>
                                 </group>

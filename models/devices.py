@@ -11,11 +11,14 @@ class NIDevices(models.Model):
     description = fields.Char(string="Description")
     tag_ids = fields.Many2many('ni.settings.tags', string="Tags")
     devitem_id = fields.Many2one('ni.device.register', string="Device Item")
+    dev_category = fields.Char(string="Category", compute='_get_dev_category')
     network_id = fields.Many2one('ni.networks')
+    device_os = fields.Char(string="OS")
     location = fields.Char(string="Location")
     resp_user = fields.Char(string="Responsible User")
 
     # Management Access
+    mgmt_dhcp = fields.Boolean(string="DHCP")
     mgmt_ip = fields.Char(string="Management IP Address")
     mgmt_vlan = fields.Char(string="Management VLAN")
     mgmt_mac = fields.Char(string="Management Interface MAC")
@@ -29,3 +32,13 @@ class NIDevices(models.Model):
     mnt_ids = fields.One2many('ni.maintenance', 'device_id')
     # Interfaces
     intf_ids = fields.One2many('ni.interfaces', 'device_id')
+
+    def _get_dev_category(self):
+        for rec in self:
+            rec.dev_category = rec.devitem_id.category.display_name
+
+    @api.onchange('mgmt_dhcp')
+    def _mgmt_dhcp_onchange(self):
+        for rec in self:
+            if rec.mgmt_dhcp:
+                rec.mgmt_ip = "Dynamic"
