@@ -10,7 +10,7 @@
     'category': 'Inventory',
 
     # any module necessary for this one to work correctly
-    'depends': [],
+    'depends': ['hr', 'cm_tro_personnel'],
 
     # always loaded
     'data': [

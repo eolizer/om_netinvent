@@ -20,7 +20,8 @@ class NIDevices(models.Model):
     device_os = fields.Char(string="OS")
     location = fields.Char(string="Location")
     resp_user = fields.Char(string="Responsible User")
-    department = fields.Char(string="Department")
+    # department = fields.Char(string="Department")
+    department = fields.Many2one('hr.department')
 
     # Management Access
     mgmt_dhcp = fields.Boolean(string="DHCP")
@@ -46,4 +47,6 @@ class NIDevices(models.Model):
     def _mgmt_dhcp_onchange(self):
         for rec in self:
             if rec.mgmt_dhcp:
-                rec.mgmt_ip = "Dynamic"
+                rec.mgmt_ip = "DHCP"
+            else:
+                rec.mgmt_ip = None
