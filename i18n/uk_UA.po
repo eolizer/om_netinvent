@@ -450,3 +450,13 @@ msgstr ""
 #, python-format
 msgid "Dynamic"
 msgstr "Динамічна"
+
+#. module: om_netinvent
+#: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__department
+msgid "Department"
+msgstr "Відділ"
+
+#. module: om_netinvent
+#: model:ir.model.constraint,message:om_netinvent.constraint_ni_devices_unique_hostname
+msgid "Hostname must be unique!"
+msgstr "Ім'я хоста має бути унікальним!"

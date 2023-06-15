@@ -32,6 +32,9 @@
     ],
 
     'assets': {
+        'web.assets_backend': [
+            'om_netinvent/static/src/scss/style.scss',
+        ]
 
     },
 

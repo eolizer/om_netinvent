@@ -6,6 +6,10 @@ class NIDevices(models.Model):
     _description = "Network Devices"
     _rec_name = 'hostname'
 
+    _sql_constraints = [
+        ('unique_hostname', 'unique(hostname)', "Hostname must be unique!")
+    ]
+
     hostname = fields.Char(string="Hostname", required=True)
     serial_number = fields.Char(string="Serial Number")
     description = fields.Char(string="Description")
@@ -16,6 +20,7 @@ class NIDevices(models.Model):
     device_os = fields.Char(string="OS")
     location = fields.Char(string="Location")
     resp_user = fields.Char(string="Responsible User")
+    department = fields.Char(string="Department")
 
     # Management Access
     mgmt_dhcp = fields.Boolean(string="DHCP")

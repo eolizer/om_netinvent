@@ -38,13 +38,13 @@
                     <sheet>
                         <group string="Basic Info">
                             <field name="hostname"/>
-                            <field name="mgmt_ip"/>
                             <field name="serial_number"/>
                             <field name="devitem_id"/>
                             <field name="device_os"/>
                         </group>
                         <group>
                             <field name="resp_user"/>
+                            <field name="department"/>
                             <field name="location"/>
                         </group>
                         <group string="Description">
@@ -80,6 +80,26 @@
                         </notebook>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="view_device_filter" model="ir.ui.view">
+            <field name="name">ni.devices.search</field>
+            <field name="model">ni.devices</field>
+            <field name="arch" type="xml">
+                <search string="Devices">
+                    <field name="hostname"/>
+                    <field name="mgmt_ip"/>
+                    <field name="mgmt_mac"/>
+                    <group expand="0" string="Group By">
+                        <filter name="network_id" string="Network" domain="[]" context="{'group_by': 'network_id'}"/>
+                        <filter name="department" string="Department" domain="[]" context="{'group_by': 'department'}"/>
+                    </group>
+                    <searchpanel>
+                        <field name="network_id" icon="fa-building" enable_counters="1"/>
+<!--                        <field name="department" icon="fa-users" enable_counters="1"/>-->
+                    </searchpanel>
+                </search>
             </field>
         </record>
 
