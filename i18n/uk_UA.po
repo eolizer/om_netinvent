@@ -315,6 +315,7 @@ msgstr "Мережа"
 
 #. module: om_netinvent
 #: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__network_id
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_device_filter
 #: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
 msgid "Network"
 msgstr "Мережа"
@@ -453,6 +454,7 @@ msgstr "Динамічна"
 
 #. module: om_netinvent
 #: model:ir.model.fields,field_description:om_netinvent.field_ni_devices__department
+#: model_terms:ir.ui.view,arch_db:om_netinvent.view_device_filter
 msgid "Department"
 msgstr "Відділ"
 
