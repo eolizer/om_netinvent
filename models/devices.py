@@ -19,9 +19,9 @@ class NIDevices(models.Model):
     network_id = fields.Many2one('ni.networks')
     device_os = fields.Char(string="OS")
     location = fields.Char(string="Location")
-    resp_user = fields.Char(string="Responsible User")
+    resp_user = fields.Char(string="Responsible User", tracking=True)
     # department = fields.Char(string="Department")
-    department = fields.Many2one('hr.department')
+    department = fields.Many2one('hr.department', tracking=True)
 
     # Management Access
     mgmt_dhcp = fields.Boolean(string="DHCP")

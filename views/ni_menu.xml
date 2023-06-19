@@ -35,12 +35,26 @@
             action="view_ni_device_register_action"
             sequence="3"/>
 
+        <!-- Maintenance -->
+        <menuitem
+            id="menu_ni_maintenance_root"
+            name="Maintenance"
+            parent="menu_ni_main"
+            sequence="2"/>
+
+        <menuitem
+            id="menu_ni_maintenance_item"
+            name="Maintenance"
+            parent="menu_ni_maintenance_root"
+            action="view_ni_maintenance_full_action"
+            sequence="1"/>
+
         <!-- Settings -->
         <menuitem
             id="menu_ni_settings_root"
             name="Settings"
             parent="menu_ni_main"
-            sequence="2"/>
+            sequence="3"/>
 
         <menuitem
             id="menu_ni_tags_item"

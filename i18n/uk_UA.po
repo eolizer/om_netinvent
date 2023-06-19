@@ -242,6 +242,8 @@ msgstr "Розташування"
 
 #. module: om_netinvent
 #: model:ir.model,name:om_netinvent.model_ni_maintenance
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_maintenance_item
+#: model:ir.ui.menu,name:om_netinvent.menu_ni_maintenance_root
 #: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_dev_interfaces_form
 #: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_devices_form
 #: model_terms:ir.ui.view,arch_db:om_netinvent.view_ni_maintenance_form
@@ -462,3 +464,9 @@ msgstr "Відділ"
 #: model:ir.model.constraint,message:om_netinvent.constraint_ni_devices_unique_hostname
 msgid "Hostname must be unique!"
 msgstr "Ім'я хоста має бути унікальним!"
+
+#. module: om_netinvent
+#: model:ir.actions.act_window,name:om_netinvent.view_ni_maintenance_full_action
+msgid "Full Maintenance Log"
+msgstr "Журнал обслуговування"
+
